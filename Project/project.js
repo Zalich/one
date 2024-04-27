@@ -1,4 +1,3 @@
-
 const submit=document.getElementById("submit")
 document.querySelector(".profile")
 const profile = []
@@ -8,7 +7,20 @@ function remove() {
   item.classList.add('hide');
 }
 
-task2();
+task1(); task2();
+
+function copyListItem(event) {
+  const listItem = event.target.closest('li');
+  const listItemCopy = listItem.cloneNode(true);
+  result.appendChild(listItemCopy);
+}
+
+function task1() {
+  const task1 = document.querySelectorAll('.a');
+  task1.forEach(button => {
+      button.addEventListener('click', copyListItem);
+  });
+}
 
 function task2() {
   const task2 = document.querySelectorAll('.b');
@@ -35,12 +47,12 @@ const li = document.createElement('li')
   <p id="address">${add}</p>
   <p id="age">${age} y/o</p>
   <p id="contact">${con}</p>
-  <button id="a">Task 1</button>
-  <button class="b">Task 2</button>
+  <button id="a">Copy</button>
+  <button class="b">Kick</button>
 </div>`
-
+  
   result.appendChild(li);
 
-  const task2Btn = li.querySelector('.b');
-  task2Btn.addEventListener('click', remove);
+  task1(); task2();
+  
 }
