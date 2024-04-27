@@ -2,13 +2,19 @@
 const submit=document.getElementById("submit")
 document.querySelector(".profile")
 const profile = []
-const btn=document.querySelectorAll(".b")
-btn.onclick = remove();
 
 function remove() {
-  const item=document.querySelector(".myItem")
-  
-  item.classList.add('hide')
+  const item = this.closest('.myItem'); 
+  item.classList.add('hide');
+}
+
+task2();
+
+function task2() {
+  const task2 = document.querySelectorAll('.b');
+  task2.forEach(button => {
+      button.addEventListener('click', remove);
+  });
 }
 
 
@@ -33,6 +39,8 @@ const li = document.createElement('li')
   <button class="b">Task 2</button>
 </div>`
 
-  console.log(profile);
   result.appendChild(li);
+
+  const task2Btn = li.querySelector('.b');
+  task2Btn.addEventListener('click', remove);
 }
