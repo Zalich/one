@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+<div class="container">
+
+<div class="addItem">
+
+  <h2><u>Add item:</u></h2> <br>
+  Name: <br>
+  <input id="name" type="text"> <br>
+  Age: <br>
+  <input id="age" type="number"> <br>
+  Address: <br>
+  <input id="add" type="text"> <br>
+  Contact: <br>
+  <input id="con" type="number"> <br>
+  Photo: <br>
+  <input id="pic" type="file" accept="image/*"> <br>
+  <button id="submit" onclick="createProfile()">Submit</button>
+
+</div>
+
+
+
+<div class="profile">
+  <h2><u>Profile:</u></h2>
+    <img src="images/kakashi.jpg" alt="User"> <br>
+    <h3>Kakashi Hatake</h3>
+    <small>Kyoto, Tokyo</small>
+  <h2><u>Your items:</u></h2>
+  <ul id="result">
+
+    <li>
+      <div class="myItem">
+        <img src="images/starboy.jpg" alt="photo"> <br>
+        <h2 id="name">Potato Potato</h2>
+        <p id="address">Kyoto, Tokyo</p>
+        <p id="age">19 y/o</p>
+        <p id="contact">92452352</p>
+        <button id="a">Task 1</button>
+        <button class="b">Task 2</button>
+      </div>
+    </li>
+
+    <li>
+      <div class="myItem">
+        <img src="images/starboy.jpg" alt="photo"> <br>
+        <h2 id="name">Potato Potato</h2>
+        <p id="address">Kyoto, Tokyo</p>
+        <p id="age">19 y/o</p>
+        <p id="contact">92452352</p>
+        <button id="a">Task 1</button>
+        <button class="b">Task 2</button>
+      </div>
+    </li>
+
+    <li>
+      <div class="myItem">
+        <img src="images/starboy.jpg" alt="photo"> <br>
+        <h2 id="name">Potato Potato</h2>
+        <p id="address">Kyoto, Tokyo</p>
+        <p id="age">19 y/o</p>
+        <p id="contact">92452352</p>
+        <button id="a">Task 1</button>
+        <button class="b">Task 2</button>
+      </div>
+    </li>
+
+  </ul>
+</div>
+
+<script src="project.js"></script>
+</body>
+</html>
