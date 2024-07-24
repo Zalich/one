@@ -9,5 +9,4 @@ int main() {
         else if(n%5==0){continue;}
         else {printf("%d",n);}
     }
-    return 0;
 }
